@@ -1,0 +1,27 @@
+{
+  "name": "humancoder",
+  "displayName": "HumanCoder",
+  "description": "Types code into VS Code at human speed with realistic mistakes",
+  "version": "1.0.0",
+  "engines": { "vscode": "^1.75.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "humancoder.start",
+        "title": "HumanCoder: Start Server"
+      },
+      {
+        "command": "humancoder.stop",
+        "title": "HumanCoder: Stop Server"
+      },
+      {
+        "command": "humancoder.resumeCheckpoint",
+        "title": "HumanCoder: Resume After Sleep/Crash"
+      }
+    ]
+  },
+  "dependencies": {}
+}
